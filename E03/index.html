@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E03</title>
+</head>
+<body>
+<form action="http://servicios.ver.ucc.mx/procesar.php" method="get">
+    <fieldset>
+        <label for="nombre">Nombre</label>
+        <input required type="text" name="nombre" id="nombre" placeholder="Nombre"> <br>
+        <label for="email">E-mail</label>
+        <input required type="email" name="email" id="email" placeholder="E-mail"> <br>
+        <label for="password">Contraseña</label>
+        <input required type="password" name="password" id="password" placeholder="contraseña"> <br>
+        <input checked type="radio" value="hombre" id="hombre" name="sexo"> <label for="hombre">Hombre</label> </input>
+        <input type="radio" value="mujer" id="mujer" name="sexo"> <label for="mujer">Mujer</label> </input>
+        <legend>Datos personales</legend>
+    </fieldset>
+    <fieldset>
+        <input type="checkbox" name="noticias[]" id="cbpolitica" value="Noticias de política"> <label for="cbpolitica">Noticias de política</label> <br>
+        <input type="checkbox" name="noticias[]" id="cbespectaculos" value="Noticias de espectáculos"> <label for="cbespectaculos">Noticias de Espectáculos</label> <br>
+        <input type="checkbox" name="noticias[]" id="cbtecnologia" value="Noticias de tecnología"> <label for="cbtecnologia">Noticias de tecnología</label> <br>
+        <label for="entrega">Método de entrega</label> <br>
+        <select name="entrega" id="entrega">
+            <option value="Desde el portal">Desde el portal</option>
+            <option value="Enviar a mi e-mail">Enviar a mi e-mail</option>
+        </select>
+        <legend>Servicio de noticias</legend>
+        <label for="observacion">Observación</label> <br>
+        <textarea name="observacion" id="observacion" cols="30" rows="5"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
